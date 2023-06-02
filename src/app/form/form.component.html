@@ -16,8 +16,8 @@
     <input type="text" name="location" [(ngModel)]="location">
 </div>
 <div class="btn">
-    <button (click)="add()">ADD</button>
-    <button (click)="update()">Update</button>
+    <button (click)="add()" [hidden]="invisible">ADD</button>
+    <button (click)="update()" [hidden]="!invisible">Update</button>
 </div>
 
 

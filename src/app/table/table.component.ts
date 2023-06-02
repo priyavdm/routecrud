@@ -39,7 +39,8 @@ export class TableComponent implements OnInit{
   }
   
   editlist(id:number){
-    this.router.navigate(['editform',id])
+    let invisible=true;
+    this.router.navigate(['editform',invisible,id])
   }
 
 

@@ -15,10 +15,12 @@ export class FormComponent implements OnInit{
     roles:any='';
     gender:any='';
     location:any='';
+    invisible:any=false;
 
     constructor(public service:ServiceService, public router:Router, public actroute:ActivatedRoute){}
   ngOnInit(): void {
     // throw new Error('Method not implemented.');
+    this.invisible=this.actroute.snapshot.paramMap.get('invisible');
     let id=this.actroute.snapshot.paramMap.get('id')
     this.service.edit(id).subscribe((data:any)=>{
        console.log(data);
