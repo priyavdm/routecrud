@@ -4,7 +4,7 @@ var connection = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
     password : 'Password123',
-    database : 'crud'
+    database : 'crudpractise'
   });
 
 var cors =require('cors') 
